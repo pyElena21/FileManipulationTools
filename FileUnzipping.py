@@ -18,7 +18,7 @@ def unzip_tarfiles(path_to_tarfiles, unzip_where_folder):
     Fast unzipper for csv.tar.gz files
     
     '''
-    files = [f for f in os.listdir(unzip_tarfiles) if f.endswith('.csv.tar.gz')]
+    files = [f for f in os.listdir(path_to_tarfiles) if f.endswith('.csv.tar.gz')]
     print(files)
     
     for fname in files:
